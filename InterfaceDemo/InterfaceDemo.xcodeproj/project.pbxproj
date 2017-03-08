@@ -17,6 +17,7 @@
 		529826151E70501900E0B0D0 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529826141E70501900E0B0D0 /* ProfileTableViewController.swift */; };
 		529826171E70502B00E0B0D0 /* SummaryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529826161E70502B00E0B0D0 /* SummaryCollectionViewController.swift */; };
 		529826191E70503700E0B0D0 /* AccountCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529826181E70503700E0B0D0 /* AccountCollectionViewController.swift */; };
+		5298261B1E705CBE00E0B0D0 /* AccountCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5298261A1E705CBE00E0B0D0 /* AccountCollectionViewFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		529826141E70501900E0B0D0 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		529826161E70502B00E0B0D0 /* SummaryCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryCollectionViewController.swift; sourceTree = "<group>"; };
 		529826181E70503700E0B0D0 /* AccountCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountCollectionViewController.swift; sourceTree = "<group>"; };
+		5298261A1E705CBE00E0B0D0 /* AccountCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				529826161E70502B00E0B0D0 /* SummaryCollectionViewController.swift */,
 				529826181E70503700E0B0D0 /* AccountCollectionViewController.swift */,
 				529825E81E704EAE00E0B0D0 /* Main.storyboard */,
+				5298261A1E705CBE00E0B0D0 /* AccountCollectionViewFlowLayout.swift */,
 				529825EB1E704EAE00E0B0D0 /* Assets.xcassets */,
 				529825ED1E704EAE00E0B0D0 /* LaunchScreen.storyboard */,
 				529825F01E704EAE00E0B0D0 /* Info.plist */,
@@ -275,6 +278,7 @@
 				529826171E70502B00E0B0D0 /* SummaryCollectionViewController.swift in Sources */,
 				529826131E704F7200E0B0D0 /* MainPageViewController.swift in Sources */,
 				529825E51E704EAE00E0B0D0 /* AppDelegate.swift in Sources */,
+				5298261B1E705CBE00E0B0D0 /* AccountCollectionViewFlowLayout.swift in Sources */,
 				529826191E70503700E0B0D0 /* AccountCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -91,9 +91,4 @@ class AccountCollectionViewController: UICollectionViewController {
     }
     */
 
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        
-//        return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
-//    }
-
 }
