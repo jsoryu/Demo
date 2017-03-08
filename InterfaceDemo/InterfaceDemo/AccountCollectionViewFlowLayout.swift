@@ -8,9 +8,11 @@
 
 import UIKit
 
+// @IBDesignable enables custom element on Interface Builder
 @IBDesignable
 class AccountCollectionViewFlowLayout: UICollectionViewFlowLayout {
 
+    // @IBInspectable defines custom label, fields and its behavior once values are set
     @IBInspectable var cellWidth: CGFloat = 50.0 {
         didSet {
             

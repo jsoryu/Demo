@@ -8,8 +8,9 @@
 
 import UIKit
 
-class MainPageViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource {
+class MainPageViewController: UIPageViewController, UIPageViewControllerDataSource {
 
+    // Declares array of ViewControllers. NavigationControllers are registered
     let pages = ["ProfileNavigationController", "SummaryNavigationController", "AccountNavigationController"]
     
     override func viewDidLoad() {
@@ -20,6 +21,7 @@ class MainPageViewController: UIPageViewController, UIPageViewControllerDelegate
         self.dataSource = self
         self.delegate = self
         
+        // Define array of ViewControllers and mark starting point of display
         setViewControllers([viewControllerAtIndex(index: 1)!], direction: .forward, animated: false, completion: nil)
         
     }
@@ -39,7 +41,22 @@ class MainPageViewController: UIPageViewController, UIPageViewControllerDelegate
         // Pass the selected object to the new view controller.
     }
     */
+    
+    // MARK: Custom Codes
 
+    // Custom function to retrieve ViewController information from array defined above
+    func viewControllerAtIndex(index: Int) -> UIViewController? {
+        
+        let viewController = storyboard?.instantiateViewController(withIdentifier: pages[index])
+        
+        return viewController
+    }
+}
+
+extension MainPageViewController: UIPageViewControllerDelegate {
+    
+    // MARK: UIPageViewControllerDelegate
+    
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         
         if let index = pages.index(of: viewController.restorationIdentifier!){
@@ -47,7 +64,7 @@ class MainPageViewController: UIPageViewController, UIPageViewControllerDelegate
                 return viewControllerAtIndex(index: index - 1)
             }
         }
-
+        
         return nil
     }
     
@@ -61,11 +78,5 @@ class MainPageViewController: UIPageViewController, UIPageViewControllerDelegate
         
         return nil
     }
-    func viewControllerAtIndex(index: Int) -> UIViewController? {
-        
-        let viewController = storyboard?.instantiateViewController(withIdentifier: pages[index])
-        
-        return viewController
-    }
-}
 
+}
