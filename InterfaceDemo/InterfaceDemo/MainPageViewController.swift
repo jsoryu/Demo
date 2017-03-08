@@ -10,7 +10,7 @@ import UIKit
 
 class MainPageViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource {
 
-    let pages = ["ProfileTableViewController", "SummaryCollectionViewController", "AccountCollectionViewController"]
+    let pages = ["ProfileNavigationController", "SummaryNavigationController", "AccountNavigationController"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +20,7 @@ class MainPageViewController: UIPageViewController, UIPageViewControllerDelegate
         self.dataSource = self
         self.delegate = self
         
-        setViewControllers([viewControllerAtIndex(index: 0)!], direction: .forward, animated: false, completion: nil)
+        setViewControllers([viewControllerAtIndex(index: 1)!], direction: .forward, animated: false, completion: nil)
         
     }
 
